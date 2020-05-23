@@ -1,0 +1,27 @@
+\begin{tikzpicture}
+%draw the axes
+% \draw[->] (0,0,0) -- (3,0,0) node[anchor=west]{$x$};
+% \draw[->] (0,0,0) -- (0,3,0) node[anchor=west]{$y$};
+% \draw[->] (0,0,0) -- (0,0,3) node[anchor=west]{$z$};
+
+%draw the top and bottom of the cube
+\draw[gray] (-2.0, -1) rectangle (2.2, 2.2);
+\node[gray] (name) at (-1.4, 0.6) {Cube};
+\node[color=white, fill=gray!80] (name) at (-1.4, 1.8) {3-D};
+
+\draw[fill=gray!50] (2,0,0) -- (2,2,0) -- (2,2,2) -- (2,0,2) -- cycle;
+\draw[fill=gray!50] (0,0,2) -- (0,2,2) -- (2,2,2) -- (2,0,2) -- cycle;
+\draw[fill=gray!50] (0,2,0) -- (2,2,0) -- (2,2,2) -- (0,2,2) -- cycle;
+
+\draw[] (0,2,2) -- (0,2,0);
+\draw[] (2,0,0) -- (2,2,0);
+\draw[] (2,0,0) -- (2,0,2);
+\draw[] (2,0,2) -- (0,0,2);
+\draw[] (0,0,2) -- (0,2,2);
+\draw[] (0,2,0) -- (2,2,0);
+
+\draw[densely dotted] (0,0,0) -- (0,0,2);
+\draw[densely dotted] (0,0,0) -- (0,2,0);
+\draw[densely dotted] (0,0,0) -- (2,0,0);
+
+\end{tikzpicture}

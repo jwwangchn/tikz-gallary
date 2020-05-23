@@ -1,0 +1,22 @@
+\begin{tikzpicture}
+%draw the axes
+% \draw[->] (0,0,0) -- (3,0,0) node[anchor=west]{$x$};
+% \draw[->] (0,0,0) -- (0,3,0) node[anchor=west]{$y$};
+% \draw[->] (0,0,0) -- (0,0,3) node[anchor=west]{$z$};
+
+% draw text
+\draw[gray] (-2.0, -1) rectangle (2.2, 2.2);
+\node[gray] (name) at (-1.4, 0.6) {Line};
+\node[color=white, fill=gray!80] (name) at (-1.4, 1.8) {3-D};
+
+% draw the edges in the cube
+\draw[color=red!50] (2,0,0) -- (2,2,0) -- (2,2,2) -- (2,0,2) -- cycle;
+\draw[color=green!50] (0,0,2) -- (0,2,2) -- (2,2,2) -- (2,0,2) -- cycle;
+\draw[color=blue!50] (0,2,0) -- (2,2,0) -- (2,2,2) -- (0,2,2) -- cycle;
+    
+% draw the edge out of the cube
+\draw[color=red!70, densely dotted] (0,0,0) -- (0,0,2);
+\draw[color=blue!70, densely dotted] (0,0,0) -- (0,2,0);
+\draw[color=green!70, densely dotted] (0,0,0) -- (2,0,0);
+
+\end{tikzpicture}

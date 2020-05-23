@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+%draw the axes
+% \draw[->] (0,0,0) -- (3,0,0) node[anchor=west]{$x$};
+% \draw[->] (0,0,0) -- (0,3,0) node[anchor=west]{$y$};
+% \draw[->] (0,0,0) -- (0,0,3) node[anchor=west]{$z$};
+
+%draw the top and bottom of the cube
+\draw[gray] (-2.0, -1) rectangle (2.2, 2.2);
+\node[gray] (name) at (-1.4, 0.6) {Plane};
+\node[color=white, fill=gray!80] (name) at (-1.4, 1.8) {3-D};
+
+\draw[color=red!25, fill=red!25] (2,0,0) -- (2,2,0) -- (2,2,2) -- (2,0,2) -- cycle;
+\draw[color=green!25, fill=green!25] (0,0,2) -- (0,2,2) -- (2,2,2) -- (2,0,2) -- cycle;
+\draw[color=blue!25, fill=blue!25] (0,2,0) -- (2,2,0) -- (2,2,2) -- (0,2,2) -- cycle;
+
+\end{tikzpicture}
